@@ -11,14 +11,18 @@
 </head>
 <body>
   <ul id="demo-block">
-    <li><h1>Stephen and Rebecca</h1></li>
-    <li>r.s.v.p. | our story | gifts</li>
+    <li><h1><%= link_to "Stephen and Rebecca", root_path %></h1></li>
+    <li><%= link_to "r.s.v.p.",'rsvp' %> | 
+        <%= link_to "our story", 'story' %> | 
+        <%= link_to "directions", 'directions' %> | 
+        <%= link_to 'gifts','gifts' %></li>
   </ul>
 
   <!--Arrow Navigation-->
   <a id="prevslide" class="load-item"></a>
   <a id="nextslide" class="load-item"></a>
+  <div id="page-wrap">
 <%= yield %>
-
+  </div>
 </body>
 </html>

@@ -12,16 +12,21 @@
       background:url('bg-black.png'); 
       font:14pt "Linden Hill", Helvetica, Arial, sans-serif; }
     ul#demo-block li a{ 
-      color:#eee; 
-      font-weight:bold; }
+      color:#aaa; 
+      text-decoration:none;}
+    ul#demo-block li a:hover{
+      color:#eee;
+      }
     p{  padding:0 30px 30px 30px;
       color:#111;
       font:12pt "Linden Hill", "Helvetica Neue", "Helvetica", Arial, sans-serif;
       //text-shadow: #000 0px 1px 0px;
       line-height:200%; }
     p a{ 
-      color:#eee;
-      font-weight:bold; }
+      color:#007;
+      text-decoration:none;}
+    p a:hover{ 
+      color:#777;}
     h1{ 
       padding:30px 30px 20px 30px;
       font:18pt "Linden Hill";
