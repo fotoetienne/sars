@@ -1,4 +1,14 @@
 Sars::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/rsvp"
+
+  get "pages/story"
+
+  get "pages/gifts"
+
+  get "pages/directions"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<!--
+		Supersized - Fullscreen Slideshow jQuery Plugin
+		Version : 3.2.7
+		Site	: www.buildinternet.com/project/supersized
+		
+		Author	: Sam Dunn
+		Company : One Mighty Roar (www.onemightyroar.com)
+		License : MIT License / GPL License
+	-->
+
+	<head>
+
+		<title>Supersized - Full Screen Background Slideshow jQuery Plugin</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" href="assets/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="assets/supersized.shutter.css" type="text/css" media="screen" />
+		<link href='http://fonts.googleapis.com/css?family=Linden+Hill:400italic,400' rel='stylesheet' type='text/css'>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript" src="assets/supersized.3.2.7.min.js"></script>
+		<script type="text/javascript" src="assets/supersized.shutter.min.js"></script>
+		
+		<script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					slide_interval          :   30000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	1000,		// Speed of transition
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					slides 					:  	[			// Slideshow Images
+														{image : 'assets/01.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-1.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
+														{image : 'assets/02.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-2.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},  
+														{image : 'assets/03.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-3.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
+														{image : 'assets/04.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-1.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
+														{image : 'assets/05.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-2.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
+														{image : 'assets/06.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-3.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
+														{image : 'assets/07.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-1.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'},
+														{image : 'assets/08.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-2.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'},
+														{image : 'assets/09.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-3.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'}
+												]
+					
+				});
+		    });
+		    
+		</script>
+
+	</head>
+	
+	<style type="text/css">
+		ul#demo-block{ 
+			margin:0 15px 15px 15px;
+			padding: 30px;
+			}
+		ul#demo-block li{ 
+			margin:0 0 10px 0; 
+			padding:10px; 
+			display:inline; 
+			float:left; 
+			clear:both; 
+			color:#aaa; 
+			background:url('assets/bg-black.png'); 
+			font:14pt "Linden Hill", Helvetica, Arial, sans-serif; }
+		ul#demo-block li a{ 
+			color:#eee; 
+			font-weight:bold; }
+		p{ 	padding:0 30px 30px 30px;
+			color:#111;
+			font:12pt "Linden Hill", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+			//text-shadow: #000 0px 1px 0px;
+			line-height:200%; }
+		p a{ 
+			color:#eee;
+			font-weight:bold; }
+		h1{ 
+			padding:30px 30px 20px 30px;
+			font:18pt "Linden Hill";
+			font-style: italic;
+		}
+		h3{ 
+			padding:30px 30px 20px 30px;
+			font:14pt "Linden Hill";
+			color: #005;
+			font-style: italic;
+			font-weight:bold;
+		}
+		#content{ 
+			background:#111; 
+			background:url('assets/bg-black.png'); 
+			width:600px; 
+			margin:50px auto; 
+			top-margin:100px auto; 
+			text-align:left; 
+		}
+		#page-wrap {
+			width: 600px;
+			margin: 50px auto;
+			padding: 20px; 
+			background: white; 
+			background: rgba(255, 255, 255, 0.6);
+			-moz-box-shadow: 0 0 20px black; 
+			-webkit-box-shadow: 0 0 20px black; 
+			box-shadow: 0 0 20px black; 
+		}
+		</style>
+
+<body>
+
+	<!--Demo styles (you can delete this block)-->
+	
+	<ul id="demo-block">
+		<li><h1>Stephen and Rebecca</h1></li>
+		<li>r.s.v.p. | our story | gifts</li>
+	</ul>
+	
+	<!--End of styles-->
+
+	<!--Thumbnail Navigation-->
+	<div id="prevthumb"></div>
+	<div id="nextthumb"></div>
+	
+	<!--Arrow Navigation-->
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+	
+	<div id="thumb-tray" class="load-item">
+		<div id="thumb-back"></div>
+		<div id="thumb-forward"></div>
+	</div>
+	
+	<div id="page-wrap">
+		<h3>Our Story</h3>
+		<p>
+			How we met:
+	Shortly after I graduated from Covenant College I decided I wanted to get more involved in my church and decided to join a Bible study. I specifically chose an all women’s Bible study so that I wouldn’t be distracted by guys or have corrupted motives. Little did I know that I was going to meet my future mother-in-law at this study. She and I seemed to just click and we got to talking afterwards and she started telling me about one of her sons named Stephen. I was quite intrigued by this man who was intelligent, adventurous with a streak of crazy. He sounded perfect for me, to such an extent that I told my best friend the next day “Brenda, guess what? I heard about my future husband last night, there’s one problem, I’m never going to meet him.” I said this completely joking, little did I know what was going to happen next. 
+	Stephen’s side
+	So later that week I get a phone call at work from Sue inviting me over for a family dinner the following night. I turned bright red (while I was sitting at my desk) and said “ok.” I got off the phone and turned to my co-workers, “ I just got set up on a blind date and I said yes, am I crazy?” So the next night I show up at Jay and Sue’s house at 6pm and Stephen was standing in the yard talking to his dad. My first thought was, “ok here we go, man he’s cute!” Six hours after I arrived I left dinner, Stephen had gotten my number, invited me to a party the next night, and already had me hooked. 
+
+Proposal:
+	At 5:50am on April 26th, I get a phone call from Stephen. I am NOT a morning person, so for those of you who know me well, Stephen was a brave man to wake me up that early. He asked me if I thought I could get ready for work a little early and I said yes. We drove up to an overview on the mountain near the golf course and watched the sunrise together. Then Stephen pulled a piece of paper out of his pocket and told me that this list was the top 30 reasons why he loves me, and then he started reading through them all. By the time he got to the number one reason, I was crying. Then he got down on one knee and asked me to marry him and I said YES!! We both ended up having to work that day and it was hands down the hardest time I’ve ever had concentrating at work.
+		</p>
+	</div>
+
+</body>
+</html>

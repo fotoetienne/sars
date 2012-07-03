@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sars</title>
+  <title>Stephen and Rebecca ~ 8-18-2012</title>
   <%= stylesheet_link_tag    "application" %>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
   <%= javascript_include_tag "application" %>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link href='http://fonts.googleapis.com/css?family=Linden+Hill:400italic,400' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <ul id="demo-block">
+    <li><h1>Stephen and Rebecca</h1></li>
+    <li>r.s.v.p. | our story | gifts</li>
+  </ul>
 
+  <!--Arrow Navigation-->
+  <a id="prevslide" class="load-item"></a>
+  <a id="nextslide" class="load-item"></a>
 <%= yield %>
 
 </body>

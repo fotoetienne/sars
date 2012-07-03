@@ -1,0 +1,54 @@
+    ul#demo-block{ 
+      margin:0 15px 15px 15px;
+      padding: 30px;
+      }
+    ul#demo-block li{ 
+      margin:0 0 10px 0; 
+      padding:10px; 
+      display:inline; 
+      float:left; 
+      clear:both; 
+      color:#aaa; 
+      background:url('bg-black.png'); 
+      font:14pt "Linden Hill", Helvetica, Arial, sans-serif; }
+    ul#demo-block li a{ 
+      color:#eee; 
+      font-weight:bold; }
+    p{  padding:0 30px 30px 30px;
+      color:#111;
+      font:12pt "Linden Hill", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+      //text-shadow: #000 0px 1px 0px;
+      line-height:200%; }
+    p a{ 
+      color:#eee;
+      font-weight:bold; }
+    h1{ 
+      padding:30px 30px 20px 30px;
+      font:18pt "Linden Hill";
+      font-style: italic;
+    }
+    h3{ 
+      padding:30px 30px 20px 30px;
+      font:14pt "Linden Hill";
+      color: #005;
+      font-style: italic;
+      font-weight:bold;
+    }
+    #content{ 
+      background:#111; 
+      background:url('bg-black.png'); 
+      width:600px; 
+      margin:50px auto; 
+      top-margin:100px auto; 
+      text-align:left; 
+    }
+    #page-wrap {
+      width: 600px;
+      margin: 50px auto;
+      padding: 20px; 
+      background: white; 
+      background: rgba(255, 255, 255, 0.6);
+      -moz-box-shadow: 0 0 20px black; 
+      -webkit-box-shadow: 0 0 20px black; 
+      box-shadow: 0 0 20px black; 
+    }
