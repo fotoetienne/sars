@@ -24,13 +24,13 @@
 </script>
 </head>
 <body>
-  <ul id="demo-block">
-    <li><h1><%= link_to "Stephen and Rebecca", root_path %></h1></li>
-    <li><%= link_to "r.s.v.p.",'rsvp' %> | 
-        <%= link_to "our story", 'story' %> | 
-        <%= link_to "directions", 'directions' %> | 
-        <%= link_to 'gifts','gifts' %></li>
-  </ul>
+    <%= link_to(image_tag('stephenandrebecca.png',:class=>'logo'), root_path)%>
+  <div id="topnav">
+    <%= link_to "r.s.v.p.",'rsvp' %> | 
+    <%= link_to "our story", 'story' %> | 
+    <%= link_to "directions", 'directions' %> | 
+    <%= link_to 'gifts','gifts' %>
+  </div>
 
   <!--Arrow Navigation-->
   <a id="prevslide" class="load-item"></a>

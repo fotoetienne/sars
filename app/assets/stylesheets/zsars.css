@@ -17,6 +17,25 @@
     ul#demo-block li a:hover{
       color:#eee;
       }
+    div#topnav {
+      margin: 15px;
+      padding: 10px;
+      float:left;
+      color:#aaa;
+      background:url('bg-black.png');
+      font:14pt "Linden Hill", Helvetica, Arial, sans-serif; }
+    div#topnav a{ 
+      color:#aaa; 
+      text-decoration:none;}
+    div#topnav a:hover{
+      color:#eee;
+      }
+    .logo {
+      //display: inline;
+      //clear:both;
+      margin: 15px;
+      float:right;
+      }
     p{  padding:0 30px 30px 30px;
       color:#111;
       font:12pt "Linden Hill", "Helvetica Neue", "Helvetica", Arial, sans-serif;
@@ -48,11 +67,13 @@
       text-align:left; 
     }
     #page-wrap {
-      width: 600px;
+      clear:both;
+      width: 540px;
       margin: 50px auto;
       padding: 20px; 
       background: white; 
       background: rgba(255, 255, 255, 0.6);
+      background:url('bg-white.png'); 
       -moz-box-shadow: 0 0 20px black; 
       -webkit-box-shadow: 0 0 20px black; 
       box-shadow: 0 0 20px black; 
