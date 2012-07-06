@@ -1,9 +1,9 @@
 class RsvpMailer < ActionMailer::Base
-  default from: "mail@stephenandrebeccaspalding.com"
-  default :to => "stephen.spalding@gmail.com"
+  default from: "rsvp@stephenandrebeccaspalding.com"
+  default :to => "stephen.spalding@gmail.com,bekita24@gmail.com"
 
   def new_rsvp(rsvp)
     @rsvp = rsvp
-    mail(:subject => "[rsvp] #{rsvp.name}")
+    mail(:subject => "[rsvp] #{rsvp.name} is #{rsvp.response}")
   end
 end
