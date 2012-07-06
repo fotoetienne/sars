@@ -1,0 +1,22 @@
+﻿<h3>Répondez s'il vous plaît</h3>
+<p>Let us know if you'll be able to join us! If you're not sure yet, just go ahead and make your best guess. You can always come back and update us if your plans change. Thanks!
+</p>
+<div id='rsvp_form'>
+<%= form_for @rsvp, :url => rsvp_path do |f| %>
+      <%= f.label "My name:" %>
+      <%= f.text_field :name %><br/>
+      I am: <%= f.select(:response,@response_options) %><br/>
+    
+      <%= f.label "My email address:" %>
+      <%= f.text_field :email %><br/>
+    
+      <%= f.label "I am also responding for:" %><br/>
+      <%= f.text_field :name2 %> is <%= f.select(:response2,@response_options) %><br/>
+      <%= f.text_field :name3 %> is <%= f.select(:response3,@response_options) %><br/>
+      <%= f.text_field :name4 %> is <%= f.select(:response4,@response_options) %><br/>
+      <%= f.text_field :name5 %> is <%= f.select(:response5,@response_options) %><br/>
+      <%= f.text_field :name6 %> is <%= f.select(:response6,@response_options) %><br/>
+  
+    <%= f.submit "Répondez" %>
+<% end %>
+</div>

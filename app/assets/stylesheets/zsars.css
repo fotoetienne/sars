@@ -46,6 +46,11 @@
       text-decoration:none;}
     p a:hover{ 
       color:#777;}
+    form {  padding:0 30px 30px 30px;
+      color:#111;
+      font:12pt "Linden Hill", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+      //text-shadow: #000 0px 1px 0px;
+      line-height:150%; }
     h1{ 
       padding:30px 30px 20px 30px;
       font:18pt "Linden Hill";

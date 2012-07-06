@@ -1,4 +1,6 @@
 Sars::Application.routes.draw do
+  match 'rsvp' => 'rsvp#new', :as => 'rsvp', :via => :get
+  match 'rsvp' => 'rsvp#create', :as => 'rsvp', :via => :post
   root :to => 'pages#home'
   match ':action' => 'pages'
   #get "pages/home"

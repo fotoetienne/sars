@@ -1,3 +1,27 @@
 <h3>répondez s'l vous plaît</h3>
-<p>We will have a nifty rsvp form up here pretty soon, but it's not quite done yet.</p>
-<p>In the mean time, you can check out our <%= link_to 'story','story' %> if you wish.</p>
+<%= form_for @rsvp, :url => rsvp_path do |form| %>
+  <fieldset class="fields">
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+    
+    <div class="field">
+      <%= form.label :email %>
+      <%= form.text_field :email %>
+    </div>
+    <div class="field">
+      <%= form.label :subject %>
+      <%= form.text_field :subject %>
+    </div>
+    
+    <div class="field">
+      <%= form.label :body %>
+      <%= form.text_area :body %>
+    </div>
+  </fieldset>
+  
+  <fieldset class="actions">
+    <%= form.submit "Send" %>
+  </fieldset>
+<% end %>
