@@ -17,6 +17,8 @@
       <%= f.text_field :name5 %> is <%= f.select(:response5,@response_options) %><br/>
       <%= f.text_field :name6 %> is <%= f.select(:response6,@response_options) %><br/>
   
+      <%= f.label "Comments:" %><br/>
+      <%= f.text_area :comments,:size => '43x3' %><br/>
     <%= f.submit "Répondez" %>
 <% end %>
 </div>
